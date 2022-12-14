@@ -28,3 +28,5 @@ echo "$0"':   > proxychains4 curl www.google.com < is available.'
 
 cat ./my_t_conf_v2ray | sed 's:PPPPP:'"${tar}"':g' > ./my_t_conf_v2ray.tmp
 echo "$0"': ./my_t_conf_v2ray write to ./my_t_conf_v2ray.tmp for v2ray.'
+
+# chromium --proxy-server="socks5://127.0.0.1:${tar}" --no-sandbox
